@@ -3,7 +3,7 @@ var geocoder = new google.maps.Geocoder();
 
 //array to hold the geo address
 var geoAddress = [];
-
+google.maps.event.addDomListener(window, 'load', bytutorialMap);
 //function framework
 bytutorialMap = {
 	initNavigateMap: function (mapID, panelDirectionID, startLatitude, startLongitude, endLatitude, endLongitude) {
